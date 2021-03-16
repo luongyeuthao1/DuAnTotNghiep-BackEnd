@@ -1,0 +1,25 @@
+{
+  "duAnTotNghiepBackEndApp": {
+    "rating": {
+      "home": {
+        "title": "Ratings",
+        "createLabel": "Thêm mới một Rating",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Rating",
+        "notFound": "No Ratings found"
+      },
+      "created": "Một Rating mới được tạo với định danh {{ param }}",
+      "updated": "Một Rating cập nhật với định danh {{ param }}",
+      "deleted": "Một Rating đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Rating {{ id }}?"
+      },
+      "detail": {
+        "title": "Rating"
+      },
+      "content": "Content",
+      "times": "Times",
+      "rank": "Rank",
+      "user": "User"
+    }
+  }
+}
