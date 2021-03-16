@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "vn.fpt",
+      "nativeLanguage": "vi"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "DuAnTotNghiepBackEnd",
+    "packageName": "vn.fpt",
+    "packageFolder": "vn/fpt",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "ZmE0NDFjY2UxZDMzYmRhMDE5MzlmMTU5ZWM2NDlkNTQ5NmJlNGE4MDZlYzc5ZTI2MjZiNmNmNWU0Y2Q0NTE2ODVmMjYzZWZhNTRlMDA0NjAyODdjOTYyZWI1ZWQ3M2NjMTJmOTA2MWI3MjA1YTEwN2NkNjNjMDk3OGQyYzdjNTM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1615883539758,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "vi",
+    "languages": ["vi", "en"],
+    "blueprints": []
+  }
+}
