@@ -8,6 +8,11 @@
       "entities": {
         "main": "Thực thể",
         "rating": "Rating",
+        "post": "Post",
+        "notifications": "Notifications",
+        "apply": "Apply",
+        "comment": "Comment",
+        "images": "Images",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

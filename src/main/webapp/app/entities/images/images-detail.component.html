@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="images">
+            <h2><span jhiTranslate="duAnTotNghiepBackEndApp.images.detail.title">Images</span> {{ images.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.images.url">Url</span></dt>
+                <dd>
+                    <span>{{ images.url }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.images.post">Post</span></dt>
+                <dd>
+                    <div *ngIf="images.post">
+                        <a [routerLink]="['/post', images.post?.id, 'view']">{{ images.post?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/images', images.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

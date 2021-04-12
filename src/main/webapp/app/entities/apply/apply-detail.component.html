@@ -1,0 +1,44 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apply">
+            <h2><span jhiTranslate="duAnTotNghiepBackEndApp.apply.detail.title">Apply</span> {{ apply.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.apply.time">Time</span></dt>
+                <dd>
+                    <span>{{ apply.time }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.apply.content">Content</span></dt>
+                <dd>
+                    <span>{{ apply.content }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.apply.user">User</span></dt>
+                <dd>
+                    {{ apply.user?.login }}
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.apply.post">Post</span></dt>
+                <dd>
+                    <div *ngIf="apply.post">
+                        <a [routerLink]="['/post', apply.post?.id, 'view']">{{ apply.post?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/apply', apply.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

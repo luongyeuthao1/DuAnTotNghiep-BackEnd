@@ -1,0 +1,25 @@
+{
+  "duAnTotNghiepBackEndApp": {
+    "notifications": {
+      "home": {
+        "title": "Notifications",
+        "createLabel": "Thêm mới một Notifications",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Notifications",
+        "notFound": "No Notifications found"
+      },
+      "created": "Một Notifications mới được tạo với định danh {{ param }}",
+      "updated": "Một Notifications cập nhật với định danh {{ param }}",
+      "deleted": "Một Notifications đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Notifications {{ id }}?"
+      },
+      "detail": {
+        "title": "Notifications"
+      },
+      "content": "Content",
+      "times": "Times",
+      "status": "Status",
+      "user": "User"
+    }
+  }
+}

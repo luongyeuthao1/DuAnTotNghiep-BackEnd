@@ -1,0 +1,23 @@
+{
+  "duAnTotNghiepBackEndApp": {
+    "images": {
+      "home": {
+        "title": "Images",
+        "createLabel": "Thêm mới một Images",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Images",
+        "notFound": "No Images found"
+      },
+      "created": "Một Images mới được tạo với định danh {{ param }}",
+      "updated": "Một Images cập nhật với định danh {{ param }}",
+      "deleted": "Một Images đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Images {{ id }}?"
+      },
+      "detail": {
+        "title": "Images"
+      },
+      "url": "Url",
+      "post": "Post"
+    }
+  }
+}

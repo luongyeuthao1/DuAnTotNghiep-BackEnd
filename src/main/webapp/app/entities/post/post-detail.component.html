@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="post">
+            <h2><span jhiTranslate="duAnTotNghiepBackEndApp.post.detail.title">Post</span> {{ post.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.post.content">Content</span></dt>
+                <dd>
+                    <span>{{ post.content }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.post.createTime">Create Time</span></dt>
+                <dd>
+                    <span>{{ post.createTime }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.post.like">Like</span></dt>
+                <dd>
+                    <span>{{ post.like }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.post.type">Type</span></dt>
+                <dd>
+                    <span>{{ post.type }}</span>
+                </dd>
+                <dt><span jhiTranslate="duAnTotNghiepBackEndApp.post.user">User</span></dt>
+                <dd>
+                    {{ post.user?.login }}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/post', post.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "duAnTotNghiepBackEndApp": {
+    "apply": {
+      "home": {
+        "title": "Applies",
+        "createLabel": "Thêm mới một Apply",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Apply",
+        "notFound": "No Applies found"
+      },
+      "created": "Một Apply mới được tạo với định danh {{ param }}",
+      "updated": "Một Apply cập nhật với định danh {{ param }}",
+      "deleted": "Một Apply đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Apply {{ id }}?"
+      },
+      "detail": {
+        "title": "Apply"
+      },
+      "time": "Time",
+      "content": "Content",
+      "user": "User",
+      "post": "Post"
+    }
+  }
+}

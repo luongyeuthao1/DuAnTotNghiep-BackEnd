@@ -82,22 +82,22 @@ public class RatingQueryService extends QueryService<Rating> {
     protected Specification<Rating> createSpecification(RatingCriteria criteria) {
         Specification<Rating> specification = Specification.where(null);
         if (criteria != null) {
-            if (criteria.getId() != null) {
-                specification = specification.and(buildRangeSpecification(criteria.getId(), Rating_.id));
-            }
-            if (criteria.getContent() != null) {
-                specification = specification.and(buildStringSpecification(criteria.getContent(), Rating_.content));
-            }
-            if (criteria.getTimes() != null) {
-                specification = specification.and(buildRangeSpecification(criteria.getTimes(), Rating_.times));
-            }
-            if (criteria.getRank() != null) {
-                specification = specification.and(buildRangeSpecification(criteria.getRank(), Rating_.rank));
-            }
-            if (criteria.getUserId() != null) {
-                specification = specification.and(buildSpecification(criteria.getUserId(),
-                    root -> root.join(Rating_.user, JoinType.LEFT).get(User_.id)));
-            }
+//            if (criteria.getId() != null) {
+//                specification = specification.and(buildRangeSpecification(criteria.getId(), Rating_.id));
+//            }
+//            if (criteria.getContent() != null) {
+//                specification = specification.and(buildStringSpecification(criteria.getContent(), Rating_.content));
+//            }
+//            if (criteria.getTimes() != null) {
+//                specification = specification.and(buildRangeSpecification(criteria.getTimes(), Rating_.times));
+//            }
+//            if (criteria.getRank() != null) {
+//                specification = specification.and(buildRangeSpecification(criteria.getRank(), Rating_.rank));
+//            }
+//            if (criteria.getUserId() != null) {
+//                specification = specification.and(buildSpecification(criteria.getUserId(),
+//                    root -> root.join(Rating_.user, JoinType.LEFT).get(User_.id)));
+//            }
         }
         return specification;
     }
